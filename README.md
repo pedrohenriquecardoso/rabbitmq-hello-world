@@ -6,7 +6,7 @@ This is a Hello World example for RabbitMQ Messaging Server and Node.js. This re
 
 👉 But you can also run RabbitMQ with Docker Desktop if you want.
 
-👉 How install RabbitMQ in Ubuntu? https://github.com/pedrohenriquecardoso/rabbitmq-install-ubuntu
+👉 How install RabbitMQ on Ubuntu? https://github.com/pedrohenriquecardoso/rabbitmq-install-ubuntu
 
 ## Installation ☕️
 
