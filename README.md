@@ -23,7 +23,7 @@ This is a Hello World example for RabbitMQ Messaging Server and Node.js. This re
     npm i
     ```
 
-4. If you don't have RabbitMQ installed, you can run it in a Docker container:
+4. If you don't have RabbitMQ installed, you can run it in a Docker container.
 
     ```sh
     docker run -it --rm --name rabbitmq -p 5552:5552 -p 15672:15672 -p 5672:5672  \
@@ -31,22 +31,28 @@ This is a Hello World example for RabbitMQ Messaging Server and Node.js. This re
         rabbitmq:4-management
     ```
 
-5. Wait for the server to start and then enable the stream and stream management plugins
+5. Wait for the server to start and then enable the stream and stream management plugins.
 
     ```sh
     docker exec rabbitmq rabbitmq-plugins enable rabbitmq_stream rabbitmq_stream_management 
     ```
 
-6. Run the receive script.
+6. Test rabbitmq-server status.
+
+    ```sh
+    sudo systemctl status rabbitmq-server
+    ```
+
+7. Run the receive script.
 
     ```sh
     npm run receive
     ```
 
-7. Run the send script in another terminal.
+8. Run the send script in another terminal.
 
     ```sh
     npm run receive
     ```
 
-8. Now you should see "Received: Hello, RabbitMQ!" in the receive terminal. 
+9. Now you should see "Received: Hello, RabbitMQ!" in the receive terminal. 
